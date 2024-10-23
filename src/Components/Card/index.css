@@ -1,0 +1,128 @@
+.card-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #f7f8fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin: 10px auto; /* Centering the card */
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-id {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b7280;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+    word-wrap: break-word; /* Break text for small screens */
+  }
+  
+  .card-footer {
+    display: flex;
+    color: #9d9d9d;
+    align-items: center;
+    flex-wrap: wrap; /* Make elements wrap if there's not enough space */
+    margin-top: 10px;
+  }
+  
+  .alert-icon {
+    width: 25px;
+    height: 25px;
+    background-color: #e8e9ed;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #666;
+    margin-right: 10px;
+  }
+  
+  .feature-badge {
+    background-color: #d9d9d9;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .card-container {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .card-title {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  
+    .alert-icon {
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+    }
+  
+    .feature-badge {
+      font-size: 12px;
+    }
+  
+    .profile-image {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card-container {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-image {
+      margin-top: 10px;
+    }
+  
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .alert-icon {
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+    }
+  
+    .feature-badge {
+      font-size: 12px;
+    }
+  }
+  

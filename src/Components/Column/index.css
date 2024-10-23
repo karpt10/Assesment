@@ -1,0 +1,8 @@
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    /* border: 2px solid blueviolet; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
